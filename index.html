@@ -683,7 +683,7 @@ footer p{
 
                 <button
                     class="btn sample-btn"
-                    onclick="viewSample('Class 9 Vocational Notes')">
+                    onclick="viewSample('Class 9 Vocational Notes', 'https://drive.google.com/file/d/1VBvFZpNGlwX6apPCkG5riKArU6mA-RPU/view?usp=drive_link')">
                     View Sample
                 </button>
 
@@ -752,7 +752,7 @@ footer p{
 
                 <button
                     class="btn sample-btn"
-                    onclick="viewSample('Class 10 Vocational Notes')">
+                    onclick="viewSample('Class 10 Vocational Notes', 'https://drive.google.com/file/d/1bR8YCZTLoJuKwE7ZfHvocCyZNtqPhLUL/view?usp=drive_link')">
                     View Sample
                 </button>
 
@@ -823,7 +823,7 @@ footer p{
 
                 <button
                     class="btn sample-btn"
-                    onclick="viewSample('Class 11 Vocational Notes')">
+                    onclick="viewSample('Class 11 Vocational Notes', 'https://drive.google.com/file/d/1ZJbhkKtHedX4udI_8kYVf4mD-xtqbiPn/view?usp=drive_link')">
                     View Sample
                 </button>
 
@@ -894,7 +894,7 @@ footer p{
 
                 <button
                     class="btn sample-btn"
-                    onclick="viewSample('Class 12 Vocational Notes')">
+                    onclick="viewSample('Class 12 Vocational Notes', 'https://drive.google.com/file/d/1iNrAvqXzt3aMuXGWaAwIDxTYQh5jXf7Y/view?usp=drive_link')">
                     View Sample
                 </button>
 
@@ -1762,8 +1762,7 @@ function sendOrderWhatsApp(){
 
 /* SAMPLE */
 
-function viewSample(note){
-
+function viewSample(note, pdfLink){
 
     document
     .getElementById("sampleText")
@@ -1773,12 +1772,13 @@ function viewSample(note){
         note +
         "</strong><br><br>" +
 
-        "यहाँ आपके Sample PDF का link लगाया जा सकता है।";
-
+        "Sample PDF opening...";
 
     document
     .getElementById("sampleModal")
     .style.display = "block";
+
+    window.open(pdfLink, "_blank");
 
 }
 
