@@ -1,20 +1,12 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
-
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>ABHINANDAN NOTES - Vocational Study Notes</title>
-
+<title>ABHINANDAN NOTES | Vocational Study Notes</title>
 
 <style>
-
-/* =========================
-   BASIC
-========================= */
-
 *{
     margin:0;
     padding:0;
@@ -27,17 +19,13 @@ html{
 }
 
 body{
-    background:#f4f7fb;
-    color:#172033;
+    background:#f5f7fb;
+    color:#1d2736;
 }
 
-
-/* =========================
-   HEADER
-========================= */
-
+/* HEADER */
 header{
-    background:#071b35;
+    background:#0b1f3a;
     color:white;
     padding:18px 6%;
     display:flex;
@@ -63,97 +51,86 @@ nav a{
 }
 
 nav a:hover{
-    color:#4da3ff;
+    color:#4fc3f7;
 }
 
-
-/* =========================
-   HERO
-========================= */
-
+/* HERO */
 .hero{
-    background:linear-gradient(135deg,#071b35,#123b68);
+    background:linear-gradient(135deg,#0b1f3a,#173e6d);
     color:white;
     text-align:center;
     padding:75px 20px;
 }
 
 .hero h1{
-    font-size:42px;
+    font-size:44px;
     margin-bottom:15px;
 }
 
+.hero h2{
+    font-size:27px;
+    margin-bottom:18px;
+}
+
 .hero p{
-    font-size:18px;
     max-width:800px;
     margin:auto;
-    line-height:1.6;
+    font-size:18px;
+    line-height:1.7;
 }
 
-.hero .tag{
-    display:inline-block;
-    background:white;
-    color:#071b35;
-    padding:9px 18px;
-    border-radius:30px;
-    margin-bottom:20px;
-    font-weight:bold;
-}
-
-
-/* =========================
-   SEARCH
-========================= */
-
-.search-section{
-    padding:30px 6% 10px;
-    text-align:center;
+/* SEARCH */
+.search-area{
+    max-width:900px;
+    margin:30px auto;
+    padding:0 20px;
 }
 
 .search-box{
     width:100%;
-    max-width:600px;
-    padding:15px 20px;
-    border:1px solid #d5dce5;
-    border-radius:30px;
+    padding:15px 18px;
+    border:1px solid #d5dbe5;
+    border-radius:10px;
     font-size:16px;
     outline:none;
 }
 
+.search-box:focus{
+    border-color:#1976d2;
+}
 
-/* =========================
-   FILTER
-========================= */
-
-.filter-section{
+/* FILTER */
+.filters{
     text-align:center;
-    padding:20px;
+    margin:25px 0 35px;
 }
 
 .filter-btn{
-    padding:10px 22px;
+    padding:10px 20px;
     margin:5px;
-    border:1px solid #0b3768;
+    border:none;
     border-radius:25px;
-    background:white;
-    color:#0b3768;
+    background:#e8edf5;
+    color:#0b1f3a;
     cursor:pointer;
     font-weight:bold;
 }
 
-.filter-btn:hover,
-.filter-btn.active{
-    background:#0b3768;
+.filter-btn.active,
+.filter-btn:hover{
+    background:#0b1f3a;
     color:white;
 }
 
-
-/* =========================
-   NOTES
-========================= */
-
+/* NOTES */
 .notes-section{
-    padding:35px 6% 70px;
+    padding:20px 6% 70px;
+}
+
+.notes-section h2{
+    text-align:center;
+    margin-bottom:35px;
+    font-size:32px;
 }
 
 .notes-grid{
@@ -166,201 +143,197 @@ nav a:hover{
     background:white;
     border-radius:15px;
     overflow:hidden;
-    box-shadow:0 7px 25px rgba(0,0,0,0.08);
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
     transition:0.3s;
 }
 
 .card:hover{
-    transform:translateY(-6px);
-    box-shadow:0 12px 30px rgba(0,0,0,0.14);
+    transform:translateY(-7px);
+    box-shadow:0 10px 30px rgba(0,0,0,0.13);
 }
 
-.card-top{
-    background:#071b35;
+.card-header{
+    background:#0b1f3a;
     color:white;
-    padding:25px;
+    padding:20px;
     text-align:center;
 }
 
 .class-number{
-    font-size:42px;
+    font-size:40px;
     font-weight:bold;
 }
 
+.card-header p{
+    margin-top:5px;
+    font-size:13px;
+    letter-spacing:1px;
+}
+
 .card-body{
-    padding:25px;
+    padding:22px;
 }
 
 .card-body h3{
-    font-size:21px;
-    margin-bottom:10px;
+    color:#0b1f3a;
+    margin-bottom:12px;
+    font-size:22px;
 }
 
 .card-body p{
-    color:#657080;
-    line-height:1.5;
+    color:#5d6775;
+    line-height:1.6;
+    font-size:14px;
     min-height:70px;
 }
 
 .features{
     list-style:none;
-    margin:20px 0;
+    margin:18px 0;
 }
 
 .features li{
     padding:6px 0;
-    color:#394657;
+    font-size:14px;
 }
 
 .features li::before{
     content:"✓";
-    color:green;
+    color:#1976d2;
     font-weight:bold;
     margin-right:8px;
 }
 
 .price{
-    font-size:27px;
+    font-size:28px;
     font-weight:bold;
-    color:#071b35;
+    color:#0b1f3a;
     margin:15px 0;
 }
 
-.btn-row{
-    display:flex;
-    gap:10px;
-}
-
 .btn{
+    display:inline-block;
     border:none;
-    padding:13px 12px;
+    padding:12px 18px;
     border-radius:8px;
     cursor:pointer;
     font-weight:bold;
-    width:50%;
+    font-size:14px;
+    text-decoration:none;
+    margin-right:5px;
 }
 
 .sample-btn{
-    background:#e8eef6;
-    color:#071b35;
+    background:#e8edf5;
+    color:#0b1f3a;
 }
 
 .buy-btn{
-    background:#071b35;
+    background:#1976d2;
     color:white;
 }
 
 .buy-btn:hover{
-    background:#123b68;
+    background:#125ca8;
 }
 
+.sample-btn:hover{
+    background:#d7deea;
+}
 
-/* =========================
-   ABOUT
-========================= */
-
+/* ABOUT */
 .about{
     background:white;
-    padding:65px 8%;
-    text-align:center;
+    padding:70px 7%;
 }
 
 .about h2{
-    font-size:30px;
-    margin-bottom:25px;
+    text-align:center;
+    font-size:32px;
+    color:#0b1f3a;
+    margin-bottom:20px;
 }
 
-.about p{
-    max-width:900px;
-    margin:auto;
+.about-intro{
+    max-width:850px;
+    margin:0 auto 40px;
+    text-align:center;
     line-height:1.8;
-    color:#5c6775;
+    color:#596474;
+    font-size:17px;
 }
 
-.about-info{
+.about-grid{
+    max-width:950px;
+    margin:auto;
     display:grid;
     grid-template-columns:repeat(3,1fr);
     gap:20px;
-    max-width:900px;
-    margin:35px auto 0;
 }
 
-.info-box{
-    background:#f4f7fb;
+.about-box{
     padding:25px;
+    background:#f5f7fb;
     border-radius:12px;
+    text-align:center;
 }
 
-.info-box h3{
-    color:#071b35;
+.about-box h3{
+    color:#0b1f3a;
     margin-bottom:10px;
 }
 
-.info-box p{
-    color:#5c6775;
+.about-box p{
+    color:#626d7d;
+    line-height:1.6;
 }
 
-
-/* =========================
-   CONTACT
-========================= */
-
+/* CONTACT */
 .contact{
-    background:#edf3fa;
+    padding:70px 7%;
     text-align:center;
-    padding:50px 20px;
 }
 
 .contact h2{
+    font-size:32px;
     margin-bottom:15px;
+    color:#0b1f3a;
+}
+
+.contact p{
+    margin:8px;
+    color:#5c6675;
 }
 
 .whatsapp{
     display:inline-block;
-    background:#128c7e;
+    margin-top:20px;
+    background:#25D366;
     color:white;
     text-decoration:none;
     padding:14px 25px;
     border-radius:8px;
-    margin-top:20px;
     font-weight:bold;
 }
 
-
-/* =========================
-   FOOTER
-========================= */
-
-footer{
-    background:#071b35;
-    color:white;
-    text-align:center;
-    padding:25px;
-    line-height:1.8;
-}
-
-
-/* =========================
-   MODAL
-========================= */
-
+/* MODAL */
 .modal{
     display:none;
     position:fixed;
+    z-index:2000;
     left:0;
     top:0;
     width:100%;
     height:100%;
     background:rgba(0,0,0,0.65);
-    z-index:2000;
     overflow:auto;
 }
 
-.modal-box{
+.modal-content{
     background:white;
-    width:95%;
+    width:90%;
     max-width:500px;
-    margin:50px auto;
+    margin:60px auto;
     border-radius:15px;
     padding:30px;
     position:relative;
@@ -370,179 +343,99 @@ footer{
     position:absolute;
     right:20px;
     top:15px;
-    font-size:27px;
+    font-size:28px;
     cursor:pointer;
     color:#555;
 }
 
-.modal-box h2{
-    margin-bottom:15px;
-    color:#071b35;
-}
-
-.modal-box p{
-    line-height:1.6;
-    color:#596574;
+.modal-content h2{
+    color:#0b1f3a;
     margin-bottom:15px;
 }
 
-
-/* =========================
-   INPUT
-========================= */
-
-.input{
+.modal-content input{
     width:100%;
-    padding:14px;
-    border:1px solid #ccd5df;
-    border-radius:8px;
+    padding:13px;
     margin:8px 0;
-    font-size:16px;
-    outline:none;
+    border:1px solid #ccd3dd;
+    border-radius:7px;
+    font-size:15px;
 }
 
-.input:focus{
-    border-color:#071b35;
-}
-
-
-/* =========================
-   BUTTONS
-========================= */
-
-.continue-btn,
-.pay-btn,
-.done-btn{
+.full-btn{
     width:100%;
-    padding:14px;
+    padding:13px;
     border:none;
     border-radius:8px;
-    margin-top:12px;
+    background:#1976d2;
+    color:white;
+    font-weight:bold;
     cursor:pointer;
-    font-weight:bold;
-    font-size:16px;
+    margin-top:12px;
 }
 
-.continue-btn{
-    background:#071b35;
-    color:white;
+.full-btn:hover{
+    background:#125ca8;
 }
 
-.pay-btn{
-    background:#2e7d32;
-    color:white;
-}
-
-.done-btn{
-    background:#128c7e;
-    color:white;
-}
-
-
-/* =========================
-   ORDER SUMMARY
-========================= */
-
-.order-summary{
-    background:#f2f6fa;
-    padding:15px;
-    border-radius:10px;
-    margin:15px 0;
-}
-
-
-/* =========================
-   UPI
-========================= */
-
-.upi-box{
-    background:#eef7ee;
-    border:1px solid #b7d9b8;
-    padding:18px;
-    border-radius:10px;
+/* PAYMENT */
+.payment-box{
     text-align:center;
-    margin:15px 0;
 }
 
-.upi-id{
-    font-size:19px;
-    font-weight:bold;
-    color:#1b5e20;
-    word-break:break-all;
-    margin-top:5px;
-}
-
-.price-big{
-    font-size:30px;
-    font-weight:bold;
-    margin:8px 0;
-    color:#071b35;
-}
-
-.qr-image{
-    width:220px;
-    height:220px;
-    margin:15px auto;
+.qr-code{
+    width:250px;
+    height:250px;
+    margin:20px auto;
     display:block;
     border:8px solid white;
-    border-radius:10px;
     box-shadow:0 3px 15px rgba(0,0,0,0.15);
 }
 
-.copy-btn{
-    margin-top:12px;
-    padding:10px 18px;
-    border:1px solid #1b5e20;
-    border-radius:7px;
-    background:white;
-    color:#1b5e20;
-    cursor:pointer;
+.upi-id{
+    background:#f1f4f8;
+    padding:13px;
+    border-radius:8px;
     font-weight:bold;
+    margin:15px 0;
+    word-break:break-all;
 }
 
-
-/* =========================
-   NOTE
-========================= */
+.amount{
+    font-size:28px;
+    color:#0b1f3a;
+    font-weight:bold;
+    margin:10px 0;
+}
 
 .note{
     font-size:13px;
-    color:#777;
-    margin-top:10px;
+    color:#6c7582;
+    line-height:1.5;
+    margin-top:12px;
 }
 
-
-/* =========================
-   NO RESULT
-========================= */
-
-.no-result{
-    display:none;
+/* FOOTER */
+footer{
+    background:#0b1f3a;
+    color:white;
     text-align:center;
-    padding:40px;
-    color:#777;
-    grid-column:1/-1;
+    padding:25px;
+    line-height:1.8;
 }
 
+footer p{
+    font-size:14px;
+}
 
-/* =========================
-   RESPONSIVE
-========================= */
-
+/* RESPONSIVE */
 @media(max-width:1000px){
-
     .notes-grid{
         grid-template-columns:repeat(2,1fr);
     }
-
-    .about-info{
-        grid-template-columns:1fr;
-    }
-
 }
 
-
-@media(max-width:650px){
+@media(max-width:700px){
 
     header{
         flex-direction:column;
@@ -554,12 +447,12 @@ footer{
         font-size:13px;
     }
 
-    .hero{
-        padding:55px 20px;
+    .hero h1{
+        font-size:32px;
     }
 
-    .hero h1{
-        font-size:31px;
+    .hero h2{
+        font-size:22px;
     }
 
     .hero p{
@@ -570,930 +463,682 @@ footer{
         grid-template-columns:1fr;
     }
 
-    .modal-box{
-        margin:25px auto;
+    .about-grid{
+        grid-template-columns:1fr;
+    }
+
+    .modal-content{
+        margin:30px auto;
         padding:22px;
     }
-
-    .qr-image{
-        width:200px;
-        height:200px;
-    }
-
 }
-
 </style>
-
 </head>
-
 
 <body>
 
-
-<!-- =========================
-     HEADER
-========================= -->
-
+<!-- HEADER -->
 <header>
+    <div class="logo">ABHINANDAN NOTES</div>
 
-<div class="logo">
-ABHINANDAN NOTES
-</div>
-
-<nav>
-
-<a href="#home">
-Home
-</a>
-
-<a href="#notes">
-Notes
-</a>
-
-<a href="#about">
-About
-</a>
-
-<a href="#contact">
-Contact
-</a>
-
-</nav>
-
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#notes">Notes</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
 </header>
 
 
-
-<!-- =========================
-     HERO
-========================= -->
-
+<!-- HERO -->
 <section class="hero" id="home">
 
-<div class="tag">
-VOCATIONAL EDUCATION
+    <h1>ABHINANDAN NOTES</h1>
+
+    <h2>Vocational Study Notes</h2>
+
+    <p>
+        कक्षा 9वीं से 12वीं तक के Complete Vocational Study Material,
+        Theory & Practical Notes
+    </p>
+
+</section>
+
+
+<!-- SEARCH -->
+<div class="search-area">
+
+    <input
+        type="text"
+        id="searchInput"
+        class="search-box"
+        placeholder="Search Class or Notes..."
+        onkeyup="searchNotes()"
+    >
+
 </div>
 
-<h1>
-Vocational Study Notes
-</h1>
 
-<p>
-कक्षा 9वीं से 12वीं तक के Complete Vocational Study Material,
-Theory & Practical Notes
-</p>
+<!-- FILTER -->
+<div class="filters">
 
-</section>
+    <button class="filter-btn active" onclick="filterNotes('all',this)">
+        All
+    </button>
 
+    <button class="filter-btn" onclick="filterNotes('9',this)">
+        Class 9
+    </button>
 
+    <button class="filter-btn" onclick="filterNotes('10',this)">
+        Class 10
+    </button>
 
-<!-- =========================
-     SEARCH
-========================= -->
+    <button class="filter-btn" onclick="filterNotes('11',this)">
+        Class 11
+    </button>
 
-<section class="search-section">
+    <button class="filter-btn" onclick="filterNotes('12',this)">
+        Class 12
+    </button>
 
-<input
-type="text"
-id="searchInput"
-class="search-box"
-placeholder="Search Notes... जैसे Class 11 IT"
-onkeyup="searchNotes()"
->
-
-</section>
+</div>
 
 
-
-<!-- =========================
-     FILTER
-========================= -->
-
-<section class="filter-section">
-
-<button
-class="filter-btn active"
-onclick="filterClass('all',this)">
-All
-</button>
-
-<button
-class="filter-btn"
-onclick="filterClass('9',this)">
-Class 9
-</button>
-
-<button
-class="filter-btn"
-onclick="filterClass('10',this)">
-Class 10
-</button>
-
-<button
-class="filter-btn"
-onclick="filterClass('11',this)">
-Class 11
-</button>
-
-<button
-class="filter-btn"
-onclick="filterClass('12',this)">
-Class 12
-</button>
-
-</section>
-
-
-
-<!-- =========================
-     NOTES
-========================= -->
-
+<!-- NOTES -->
 <section class="notes-section" id="notes">
 
-<div class="notes-grid" id="notesGrid">
+    <h2>Vocational Study Material</h2>
 
+    <div class="notes-grid" id="notesGrid">
 
 
-<!-- CLASS 9 -->
+        <!-- CLASS 9 -->
+        <div class="card note-card" data-class="9">
 
-<div class="card note-card" data-class="9">
+            <div class="card-header">
 
-<div class="card-top">
+                <div class="class-number">9th</div>
 
-<div class="class-number">
-9th
-</div>
+                <p>VOCATIONAL EDUCATION</p>
 
-<div>
-VOCATIONAL EDUCATION
-</div>
+            </div>
 
-</div>
+            <div class="card-body">
 
-<div class="card-body">
+                <h3>Class 9 Vocational Notes</h3>
 
-<h3>
-Class 9 Vocational Notes
-</h3>
+                <p>
+                    Complete Class 9 Vocational Theory,
+                    Practical and Important Study Material.
+                </p>
 
-<p>
-Complete Class 9 vocational theory and practical study material.
-</p>
+                <ul class="features">
 
-<ul class="features">
+                    <li>Complete Theory Notes</li>
 
-<li>Complete Theory Notes</li>
-<li>Practical Notes</li>
-<li>Important Questions</li>
-<li>Easy Language</li>
+                    <li>Practical Notes</li>
 
-</ul>
+                    <li>Important Questions</li>
 
-<div class="price">
-₹49
-</div>
+                    <li>Exam Preparation Material</li>
 
-<div class="btn-row">
+                </ul>
 
-<button
-class="btn sample-btn"
-onclick="showSample('Class 9 Vocational Notes','49','PDF_LINK_9')">
-View Sample
-</button>
+                <div class="price">₹49</div>
 
-<button
-class="btn buy-btn"
-onclick="openBuy('Class 9 Vocational Notes','49')">
-Buy Now
-</button>
+                <button class="btn sample-btn"
+                    onclick="viewSample('Class 9 Vocational Notes')">
+                    View Sample
+                </button>
 
-</div>
+                <button class="btn buy-btn"
+                    onclick="openBuy('Class 9 Vocational Notes','49')">
+                    Buy Now
+                </button>
 
-</div>
+            </div>
 
-</div>
+        </div>
 
 
+        <!-- CLASS 10 -->
+        <div class="card note-card" data-class="10">
 
-<!-- CLASS 10 -->
+            <div class="card-header">
 
-<div class="card note-card" data-class="10">
+                <div class="class-number">10th</div>
 
-<div class="card-top">
+                <p>VOCATIONAL EDUCATION</p>
 
-<div class="class-number">
-10th
-</div>
+            </div>
 
-<div>
-VOCATIONAL EDUCATION
-</div>
+            <div class="card-body">
 
-</div>
+                <h3>Class 10 Vocational Notes</h3>
 
-<div class="card-body">
+                <p>
+                    Complete Class 10 Vocational Theory,
+                    Practical and Important Study Material.
+                </p>
 
-<h3>
-Class 10 Vocational Notes
-</h3>
+                <ul class="features">
 
-<p>
-Complete Class 10 vocational theory and practical study material.
-</p>
+                    <li>Complete Theory Notes</li>
 
-<ul class="features">
+                    <li>Practical Notes</li>
 
-<li>Complete Theory Notes</li>
-<li>Practical Notes</li>
-<li>Important Questions</li>
-<li>Easy Language</li>
+                    <li>Important Questions</li>
 
-</ul>
+                    <li>Exam Preparation Material</li>
 
-<div class="price">
-₹59
-</div>
+                </ul>
 
-<div class="btn-row">
+                <div class="price">₹59</div>
 
-<button
-class="btn sample-btn"
-onclick="showSample('Class 10 Vocational Notes','59','PDF_LINK_10')">
-View Sample
-</button>
+                <button class="btn sample-btn"
+                    onclick="viewSample('Class 10 Vocational Notes')">
+                    View Sample
+                </button>
 
-<button
-class="btn buy-btn"
-onclick="openBuy('Class 10 Vocational Notes','59')">
-Buy Now
-</button>
+                <button class="btn buy-btn"
+                    onclick="openBuy('Class 10 Vocational Notes','59')">
+                    Buy Now
+                </button>
 
-</div>
+            </div>
 
-</div>
+        </div>
 
-</div>
 
+        <!-- CLASS 11 -->
+        <div class="card note-card" data-class="11">
 
+            <div class="card-header">
 
-<!-- CLASS 11 -->
+                <div class="class-number">11th</div>
 
-<div class="card note-card" data-class="11">
+                <p>VOCATIONAL EDUCATION</p>
 
-<div class="card-top">
+            </div>
 
-<div class="class-number">
-11th
-</div>
+            <div class="card-body">
 
-<div>
-VOCATIONAL EDUCATION
-</div>
+                <h3>Class 11 Vocational Notes</h3>
 
-</div>
+                <p>
+                    Complete Class 11 Vocational Theory,
+                    Practical and Important Study Material.
+                </p>
 
-<div class="card-body">
+                <ul class="features">
 
-<h3>
-Class 11 Vocational Notes
-</h3>
+                    <li>Complete Theory Notes</li>
 
-<p>
-Complete Class 11 vocational theory and practical study material.
-</p>
+                    <li>Practical Notes</li>
 
-<ul class="features">
+                    <li>Important Questions</li>
 
-<li>Complete Theory Notes</li>
-<li>Practical Notes</li>
-<li>Important Questions</li>
-<li>Easy Language</li>
+                    <li>Exam Preparation Material</li>
 
-</ul>
+                </ul>
 
-<div class="price">
-₹149
-</div>
+                <!-- PRICE ₹149 -->
+                <div class="price">₹149</div>
 
-<div class="btn-row">
+                <button class="btn sample-btn"
+                    onclick="viewSample('Class 11 Vocational Notes')">
+                    View Sample
+                </button>
 
-<button
-class="btn sample-btn"
-onclick="showSample('Class 11 Vocational Notes','149','PDF_LINK_11')">
-View Sample
-</button>
+                <!-- PRICE ₹149 -->
+                <button class="btn buy-btn"
+                    onclick="openBuy('Class 11 Vocational Notes','149')">
+                    Buy Now
+                </button>
 
-<button
-class="btn buy-btn"
-onclick="openBuy('Class 11 Vocational Notes','')">
-Buy Now
-</button>
+            </div>
 
-</div>
+        </div>
 
-</div>
 
-</div>
+        <!-- CLASS 12 -->
+        <div class="card note-card" data-class="12">
 
+            <div class="card-header">
 
+                <div class="class-number">12th</div>
 
-<!-- CLASS 12 -->
+                <p>VOCATIONAL EDUCATION</p>
 
-<div class="card note-card" data-class="12">
+            </div>
 
-<div class="card-top">
+            <div class="card-body">
 
-<div class="class-number">
-12th
-</div>
+                <h3>Class 12 Vocational Notes</h3>
 
-<div>
-VOCATIONAL EDUCATION
-</div>
+                <p>
+                    Complete Class 12 Vocational Theory,
+                    Practical and Important Study Material.
+                </p>
 
-</div>
+                <ul class="features">
 
-<div class="card-body">
+                    <li>Complete Theory Notes</li>
 
-<h3>
-Class 12 Vocational Notes
-</h3>
+                    <li>Practical Notes</li>
 
-<p>
-Complete Class 12 vocational theory and practical study material.
-</p>
+                    <li>Important Questions</li>
 
-<ul class="features">
+                    <li>Exam Preparation Material</li>
 
-<li>Complete Theory Notes</li>
-<li>Practical Notes</li>
-<li>Important Questions</li>
-<li>Easy Language</li>
+                </ul>
 
-</ul>
+                <!-- PRICE ₹149 -->
+                <div class="price">₹149</div>
 
-<div class="price">
-₹149
-</div>
+                <button class="btn sample-btn"
+                    onclick="viewSample('Class 12 Vocational Notes')">
+                    View Sample
+                </button>
 
-<div class="btn-row">
+                <!-- PRICE ₹149 -->
+                <button class="btn buy-btn"
+                    onclick="openBuy('Class 12 Vocational Notes','149')">
+                    Buy Now
+                </button>
 
-<button
-class="btn sample-btn"
-onclick="showSample('Class 12 Vocational Notes','149','PDF_LINK_12')">
-View Sample
-</button>
+            </div>
 
-<button
-class="btn buy-btn"
-onclick="openBuy('Class 12 Vocational Notes','149')">
-Buy Now
-</button>
+        </div>
 
-</div>
 
-</div>
-
-</div>
-
-
-
-<div class="no-result" id="noResult">
-No Notes Found
-</div>
-
-
-</div>
+    </div>
 
 </section>
 
 
-
-<!-- =========================
-     ABOUT
-========================= -->
-
+<!-- ABOUT -->
 <section class="about" id="about">
 
-<h2>
-About ABHINANDAN NOTES
-</h2>
+    <h2>About ABHINANDAN NOTES</h2>
+
+    <p class="about-intro">
+
+        ABHINANDAN NOTES is an educational platform created by
+        <strong>Abhinandan Dehriya</strong> to provide useful and
+        easy-to-understand Vocational Education Study Material,
+        Theory Notes, Practical Notes and Important Questions for students.
+
+        I am <strong>B.Tech and M.Tech qualified in Computer Science</strong>
+        with <strong>9+ Years of Teaching Field Experience</strong>.
+
+    </p>
 
 
-<p>
+    <div class="about-grid">
 
-<strong>ABHINANDAN NOTES</strong> एक educational platform है,
-जिसे <strong>Abhinandan Dehriya</strong> द्वारा विद्यार्थियों के लिए
-तैयार किया गया है।
+        <div class="about-box">
 
-</p>
+            <h3>Qualification</h3>
 
+            <p>
+                B.Tech & M.Tech<br>
+                Computer Science
+            </p>
 
-<p style="margin-top:15px;">
-
-मैं <strong>B.Tech और M.Tech in Computer Science</strong>
-Qualified हूँ और मुझे
-<strong>Teaching Field में 9+ Years का Experience</strong> है।
-
-</p>
+        </div>
 
 
-<p style="margin-top:15px;">
+        <div class="about-box">
 
-अपने teaching experience के आधार पर मैं विद्यार्थियों के लिए
-<strong>Vocational Education, Theory Notes, Practical Notes,
-Study Material और Important Questions</strong> को आसान एवं सरल भाषा
-में उपलब्ध कराने का प्रयास करता हूँ।
+            <h3>Experience</h3>
 
-</p>
+            <p>
+                9+ Years<br>
+                Teaching Field Experience
+            </p>
 
-
-<p style="margin-top:15px;">
-
-<strong>ABHINANDAN NOTES</strong> का उद्देश्य विद्यार्थियों को उनकी
-पढ़ाई और practical learning के लिए सरल, उपयोगी और व्यवस्थित
-study material एक ही जगह उपलब्ध कराना है।
-
-</p>
+        </div>
 
 
+        <div class="about-box">
 
-<div class="about-info">
+            <h3>Specialization</h3>
 
+            <p>
+                Vocational Education,
+                Theory Notes,
+                Practical Notes & Study Material
+            </p>
 
-<div class="info-box">
+        </div>
 
-<h3>
-🎓 Qualification
-</h3>
-
-<p>
-B.Tech & M.Tech
-<br>
-Computer Science
-</p>
-
-</div>
-
-
-<div class="info-box">
-
-<h3>
-👨‍🏫 Experience
-</h3>
-
-<p>
-9+ Years
-<br>
-Teaching Field
-</p>
-
-</div>
-
-
-<div class="info-box">
-
-<h3>
-💻 Specialization
-</h3>
-
-<p>
-Computer Science
-<br>
-Vocational Education
-</p>
-
-</div>
-
-
-</div>
+    </div>
 
 </section>
 
 
-
-<!-- =========================
-     CONTACT
-========================= -->
-
+<!-- CONTACT -->
 <section class="contact" id="contact">
 
-<h2>
-Contact Us
-</h2>
+    <h2>Contact Us</h2>
 
-<p>
-Notes खरीदने या किसी भी जानकारी के लिए WhatsApp पर संपर्क करें।
-</p>
+    <p>
+        For Notes, Study Material or any Query, contact us on WhatsApp.
+    </p>
 
+    <p>
+        WhatsApp: 9098514247
+    </p>
 
-<a
-class="whatsapp"
-href="https://wa.me/919098514247"
-target="_blank">
-
-💬 WhatsApp: 9098514247
-
-</a>
+    <a
+        class="whatsapp"
+        href="https://wa.me/919098514247"
+        target="_blank">
+        Chat on WhatsApp
+    </a>
 
 </section>
 
 
-
-<!-- =========================
-     FOOTER
-========================= -->
-
+<!-- FOOTER -->
 <footer>
 
-<strong>
-ABHINANDAN NOTES
-</strong>
+    <p>
+        © 2026 ABHINANDAN NOTES. All Rights Reserved.
+    </p>
 
-<br>
-
-Vocational Study Material | Theory | Practical
-
-<br>
-
-© 2026 ABHINANDAN NOTES. All Rights Reserved.
+    <p>
+        B.Tech & M.Tech Computer Science | 9+ Years Teaching Experience
+    </p>
 
 </footer>
 
 
-
-<!-- =========================
-     SAMPLE MODAL
-========================= -->
-
-<div class="modal" id="sampleModal">
-
-<div class="modal-box">
-
-<span
-class="close"
-onclick="closeModal('sampleModal')">
-×
-</span>
-
-
-<h2 id="sampleTitle">
-Sample Notes
-</h2>
-
-
-<p>
-नीचे दिए गए button से sample PDF देख सकते हैं।
-</p>
-
-
-<a
-id="sampleLink"
-href="#"
-target="_blank"
-class="continue-btn"
-style="display:block;text-align:center;text-decoration:none;">
-
-Open Sample PDF
-
-</a>
-
-
-</div>
-
-</div>
-
-
-
-<!-- =========================
-     BUY MODAL
-========================= -->
-
+<!-- BUY MODAL -->
 <div class="modal" id="buyModal">
 
-<div class="modal-box">
+    <div class="modal-content">
 
-<span
-class="close"
-onclick="closeModal('buyModal')">
-×
-</span>
+        <span class="close" onclick="closeModal('buyModal')">
+            ×
+        </span>
 
+        <h2>Buy Notes</h2>
 
-<h2>
-Buy Notes
-</h2>
+        <p id="selectedNote"></p>
 
+        <input
+            type="text"
+            id="studentName"
+            placeholder="Enter Student Name"
+        >
 
-<p id="buyProduct">
-Product
-</p>
+        <input
+            type="tel"
+            id="studentMobile"
+            placeholder="Enter Mobile Number"
+            maxlength="10"
+        >
 
+        <button
+            class="full-btn"
+            onclick="continueToPayment()">
+            Continue to Payment
+        </button>
 
-<div class="price-big" id="buyPrice">
-₹0
-</div>
-
-
-<input
-type="text"
-id="studentName"
-class="input"
-placeholder="Student Name"
->
-
-
-<input
-type="tel"
-id="studentMobile"
-class="input"
-placeholder="Mobile Number"
-maxlength="10"
->
-
-
-<button
-class="continue-btn"
-onclick="continueToPayment()">
-
-Continue to Payment
-
-</button>
-
-
-<p class="note">
-कृपया अपना सही Name और 10 digit Mobile Number डालें।
-</p>
-
-
-</div>
+    </div>
 
 </div>
 
 
-
-<!-- =========================
-     PAYMENT MODAL
-========================= -->
-
+<!-- PAYMENT MODAL -->
 <div class="modal" id="paymentModal">
 
-<div class="modal-box">
+    <div class="modal-content">
+
+        <span class="close" onclick="closeModal('paymentModal')">
+            ×
+        </span>
+
+        <div class="payment-box">
+
+            <h2>Payment</h2>
+
+            <p id="paymentNote"></p>
+
+            <div class="amount" id="paymentAmount">
+                ₹0
+            </div>
+
+            <p>
+                Scan QR Code using any UPI App
+            </p>
 
 
-<span
-class="close"
-onclick="closeModal('paymentModal')">
-×
-</span>
+            <!-- QR CODE -->
+            <img
+                id="qrCode"
+                class="qr-code"
+                src=""
+                alt="UPI QR Code"
+            >
 
 
-<h2>
-💳 UPI Payment
-</h2>
+            <div class="upi-id">
+                UPI ID:<br>
+                <span id="upiText">
+                    9098514247@YBL
+                </span>
+            </div>
 
 
-<div class="order-summary">
-
-<strong>
-Notes:
-</strong>
-
-<div id="paymentProduct">
-</div>
+            <button
+                class="full-btn"
+                onclick="copyUPI()">
+                Copy UPI ID
+            </button>
 
 
-<br>
+            <button
+                class="full-btn"
+                onclick="payUsingUPI()">
+                Pay Now using UPI
+            </button>
 
 
-<strong>
-Student:
-</strong>
-
-<div id="paymentStudent">
-</div>
-
-
-<br>
+            <button
+                class="full-btn"
+                onclick="paymentDone()">
+                Payment Done
+            </button>
 
 
-<strong>
-Mobile:
-</strong>
+            <p class="note">
 
-<div id="paymentMobile">
-</div>
+                Payment करने के बाद "Payment Done" पर क्लिक करें
+                और अपना UTR / Transaction ID भेजें।
+                Payment verification के बाद Notes WhatsApp पर भेजे जाएंगे।
 
-</div>
+            </p>
 
+        </div>
 
-
-<div class="upi-box">
-
-
-<div>
-<strong>
-Pay Amount
-</strong>
-</div>
-
-
-<div
-class="price-big"
-id="paymentAmount">
-
-₹0
-
-</div>
-
-
-
-<div style="margin-top:15px;">
-
-<strong>
-📱 Scan QR Code & Pay
-</strong>
+    </div>
 
 </div>
 
 
+<!-- PAYMENT CONFIRMATION MODAL -->
+<div class="modal" id="confirmModal">
 
-<img
-id="upiQR"
-class="qr-image"
-src=""
-alt="UPI QR Code"
->
+    <div class="modal-content">
 
+        <span class="close" onclick="closeModal('confirmModal')">
+            ×
+        </span>
 
+        <h2>Payment Confirmation</h2>
 
-<div>
+        <p>
+            कृपया अपना UTR / Transaction ID दर्ज करें।
+        </p>
 
-<strong>
-UPI ID
-</strong>
-
-</div>
-
-
-
-<div class="upi-id">
-9098514247@YBL
-</div>
+        <input
+            type="text"
+            id="utrNumber"
+            placeholder="Enter UTR / Transaction ID"
+        >
 
 
+        <button
+            class="full-btn"
+            onclick="sendOrderWhatsApp()">
+            Send Order on WhatsApp
+        </button>
 
-<button
-class="copy-btn"
-onclick="copyUPI()">
-
-📋 Copy UPI ID
-
-</button>
-
+    </div>
 
 </div>
 
 
+<!-- SAMPLE MODAL -->
+<div class="modal" id="sampleModal">
 
-<!-- PAY BUTTON -->
+    <div class="modal-content">
 
-<button
-class="pay-btn"
-onclick="payUsingUPI()">
+        <span class="close" onclick="closeModal('sampleModal')">
+            ×
+        </span>
 
-💳 Pay Now using UPI
+        <h2>Sample Notes</h2>
 
-</button>
+        <p id="sampleText"></p>
 
+        <br>
 
+        <p>
+            Sample PDF link को आप नीचे JavaScript में add कर सकते हैं।
+        </p>
 
-<!-- PAYMENT DONE -->
-
-<button
-class="done-btn"
-onclick="paymentDone()">
-
-✅ Payment Done
-
-</button>
-
-
-
-<p class="note">
-
-QR Code scan करके payment करें या Pay Now button का
-उपयोग करें। Payment करने के बाद Payment Done दबाकर
-UTR / Transaction ID भेजें।
-
-</p>
-
+    </div>
 
 </div>
-
-</div>
-
-
-
-<!-- =========================
-     PAYMENT DONE MODAL
-========================= -->
-
-<div class="modal" id="doneModal">
-
-<div class="modal-box">
-
-
-<span
-class="close"
-onclick="closeModal('doneModal')">
-×
-</span>
-
-
-<h2>
-Payment Confirmation
-</h2>
-
-
-<p>
-
-Payment करने के बाद अपना
-<strong>UTR / Transaction ID</strong>
-नीचे डालें।
-
-</p>
-
-
-
-<input
-type="text"
-id="utrNumber"
-class="input"
-placeholder="UTR / Transaction ID"
->
-
-
-
-<button
-class="done-btn"
-onclick="sendOrderWhatsApp()">
-
-📲 Send Order on WhatsApp
-
-</button>
-
-
-
-<p class="note">
-
-Payment verify होने के बाद Notes आपको WhatsApp पर
-भेजे जाएंगे।
-
-</p>
-
-
-</div>
-
-</div>
-
 
 
 <script>
 
+/* UPI DETAILS */
 
-/* =========================
-   VARIABLES
-========================= */
+const UPI_ID = "9098514247@YBL";
 
-let selectedProduct = "";
+const BUSINESS_NAME = "ABHINANDAN NOTES";
+
+const WHATSAPP_NUMBER = "919098514247";
+
+
+/* VARIABLES */
+
+let selectedNoteName = "";
 
 let selectedPrice = "";
 
-let selectedStudent = "";
-
-let selectedMobile = "";
+let upiURL = "";
 
 
+/* SEARCH */
 
-/* =========================
-   OPEN BUY
-========================= */
+function searchNotes(){
 
-function openBuy(product, price){
+    const input =
+        document.getElementById("searchInput")
+        .value
+        .toLowerCase();
 
-    selectedProduct = product;
+    const cards =
+        document.querySelectorAll(".note-card");
+
+    cards.forEach(card => {
+
+        const text =
+            card.innerText.toLowerCase();
+
+        if(text.includes(input)){
+
+            card.style.display = "";
+
+        }else{
+
+            card.style.display = "none";
+
+        }
+
+    });
+
+}
+
+
+/* FILTER */
+
+function filterNotes(className, button){
+
+    const cards =
+        document.querySelectorAll(".note-card");
+
+    const buttons =
+        document.querySelectorAll(".filter-btn");
+
+
+    buttons.forEach(btn => {
+
+        btn.classList.remove("active");
+
+    });
+
+
+    button.classList.add("active");
+
+
+    cards.forEach(card => {
+
+        if(className === "all"){
+
+            card.style.display = "";
+
+        }
+
+        else if(card.dataset.class === className){
+
+            card.style.display = "";
+
+        }
+
+        else{
+
+            card.style.display = "none";
+
+        }
+
+    });
+
+}
+
+
+/* OPEN BUY */
+
+function openBuy(note, price){
+
+    selectedNoteName = note;
 
     selectedPrice = price;
 
 
-    document.getElementById("buyProduct").innerText =
-        product;
+    document.getElementById("selectedNote").innerHTML =
 
+        "<strong>" + note + "</strong><br><br>" +
 
-    document.getElementById("buyPrice").innerText =
-        "₹" + price;
+        "Price: ₹" + price;
 
 
     document.getElementById("studentName").value = "";
@@ -1501,222 +1146,106 @@ function openBuy(product, price){
     document.getElementById("studentMobile").value = "";
 
 
-    document.getElementById("buyModal").style.display =
-        "block";
+    document.getElementById("buyModal").style.display = "block";
 
 }
 
 
-
-/* =========================
-   CONTINUE TO PAYMENT
-========================= */
+/* CONTINUE PAYMENT */
 
 function continueToPayment(){
 
-    let name =
-        document.getElementById("studentName")
-        .value
-        .trim();
+    const name =
+        document.getElementById("studentName").value.trim();
 
+    const mobile =
+        document.getElementById("studentMobile").value.trim();
 
-    let mobile =
-        document.getElementById("studentMobile")
-        .value
-        .trim();
-
-
-
-    /* NAME VALIDATION */
 
     if(name === ""){
 
-        alert("कृपया Student Name डालें।");
+        alert("Please enter Student Name.");
 
         return;
 
     }
 
 
+    if(mobile.length !== 10){
 
-    /* MOBILE VALIDATION */
-
-    if(!/^[0-9]{10}$/.test(mobile)){
-
-        alert("कृपया सही 10 digit Mobile Number डालें।");
+        alert("Please enter a valid 10 digit mobile number.");
 
         return;
 
     }
 
 
+    localStorage.setItem("studentName", name);
 
-    selectedStudent = name;
+    localStorage.setItem("studentMobile", mobile);
 
-    selectedMobile = mobile;
+    localStorage.setItem("selectedNote", selectedNoteName);
 
-
-
-    /* SAVE ORDER */
-
-    localStorage.setItem(
-        "studentName",
-        selectedStudent
-    );
-
-
-    localStorage.setItem(
-        "studentMobile",
-        selectedMobile
-    );
-
-
-    localStorage.setItem(
-        "selectedProduct",
-        selectedProduct
-    );
-
-
-    localStorage.setItem(
-        "selectedPrice",
-        selectedPrice
-    );
-
-
-
-    /* SHOW PAYMENT INFORMATION */
-
-    document.getElementById("paymentProduct").innerText =
-        selectedProduct;
-
-
-    document.getElementById("paymentStudent").innerText =
-        selectedStudent;
-
-
-    document.getElementById("paymentMobile").innerText =
-        selectedMobile;
-
-
-    document.getElementById("paymentAmount").innerText =
-        "₹" + selectedPrice;
-
+    localStorage.setItem("selectedPrice", selectedPrice);
 
 
     /* UPI PAYMENT LINK */
 
-    let upiID =
-        "9098514247@YBL";
-
-
-    let merchantName =
-        "ABHINANDAN NOTES";
-
-
-    let upiLink =
+    upiURL =
         "upi://pay?pa=" +
-        encodeURIComponent(upiID) +
+        encodeURIComponent(UPI_ID) +
+
         "&pn=" +
-        encodeURIComponent(merchantName) +
+        encodeURIComponent(BUSINESS_NAME) +
+
         "&am=" +
         encodeURIComponent(selectedPrice) +
+
         "&cu=INR";
 
 
+    /* QR CODE */
 
-    /* CREATE QR CODE */
-
-    let qrURL =
+    const qrURL =
         "https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=" +
-        encodeURIComponent(upiLink);
+        encodeURIComponent(upiURL);
 
 
-
-    document.getElementById("upiQR").src =
-        qrURL;
+    document.getElementById("qrCode").src = qrURL;
 
 
-
-    /* CLOSE BUY */
-
-    closeModal("buyModal");
+    document.getElementById("paymentNote").innerHTML =
+        "<strong>" + selectedNoteName + "</strong>";
 
 
+    document.getElementById("paymentAmount").innerHTML =
+        "₹" + selectedPrice;
 
-    /* OPEN PAYMENT */
 
-    document.getElementById("paymentModal").style.display =
-        "block";
+    document.getElementById("buyModal").style.display = "none";
+
+    document.getElementById("paymentModal").style.display = "block";
 
 }
 
 
-
-/* =========================
-   PAY USING UPI
-========================= */
-
-function payUsingUPI(){
-
-    let upiID =
-        "9098514247@YBL";
-
-
-    let merchantName =
-        "ABHINANDAN NOTES";
-
-
-    let amount =
-        selectedPrice;
-
-
-
-    let upiURL =
-        "upi://pay?pa=" +
-        encodeURIComponent(upiID) +
-        "&pn=" +
-        encodeURIComponent(merchantName) +
-        "&am=" +
-        encodeURIComponent(amount) +
-        "&cu=INR";
-
-
-
-    /* OPEN UPI */
-
-    window.location.href =
-        upiURL;
-
-}
-
-
-
-/* =========================
-   COPY UPI ID
-========================= */
+/* COPY UPI */
 
 function copyUPI(){
 
-    let upiID =
-        "9098514247@YBL";
-
-
-
     if(navigator.clipboard){
 
-        navigator.clipboard.writeText(upiID)
-        .then(function(){
+        navigator.clipboard.writeText(UPI_ID)
 
-            alert(
-                "UPI ID copied: " + upiID
-            );
+        .then(() => {
+
+            alert("UPI ID copied: " + UPI_ID);
 
         })
-        .catch(function(){
 
-            alert(
-                "UPI ID: " + upiID
-            );
+        .catch(() => {
+
+            alert("UPI ID: " + UPI_ID);
 
         });
 
@@ -1724,343 +1253,159 @@ function copyUPI(){
 
     else{
 
-        alert(
-            "UPI ID: " + upiID
-        );
+        alert("UPI ID: " + UPI_ID);
 
     }
 
 }
 
 
+/* PAY USING UPI */
 
-/* =========================
-   PAYMENT DONE
-========================= */
+function payUsingUPI(){
 
-function paymentDone(){
+    if(upiURL){
 
-    closeModal("paymentModal");
+        window.location.href = upiURL;
 
+    }
 
-    document.getElementById("utrNumber").value =
-        "";
+    else{
 
+        alert("Please start the payment process again.");
 
-    document.getElementById("doneModal").style.display =
-        "block";
+    }
 
 }
 
 
+/* PAYMENT DONE */
 
-/* =========================
-   SEND ORDER TO WHATSAPP
-========================= */
+function paymentDone(){
+
+    document.getElementById("paymentModal").style.display = "none";
+
+    document.getElementById("utrNumber").value = "";
+
+    document.getElementById("confirmModal").style.display = "block";
+
+}
+
+
+/* SEND ORDER TO WHATSAPP */
 
 function sendOrderWhatsApp(){
 
-    let utr =
-        document.getElementById("utrNumber")
-        .value
-        .trim();
-
+    const utr =
+        document.getElementById("utrNumber").value.trim();
 
 
     if(utr === ""){
 
-        alert(
-            "कृपया UTR / Transaction ID डालें।"
-        );
+        alert("Please enter UTR / Transaction ID.");
 
         return;
 
     }
 
 
+    const name =
+        localStorage.getItem("studentName") || "";
 
-    let message =
+    const mobile =
+        localStorage.getItem("studentMobile") || "";
+
+    const note =
+        localStorage.getItem("selectedNote") || selectedNoteName;
+
+    const price =
+        localStorage.getItem("selectedPrice") || selectedPrice;
+
+
+    const message =
 
         "ABHINANDAN NOTES - NEW ORDER\n\n" +
 
-        "Student Name: " +
-        selectedStudent +
+        "Student Name: " + name + "\n" +
 
-        "\nMobile: " +
-        selectedMobile +
+        "Mobile Number: " + mobile + "\n" +
 
-        "\nNotes: " +
-        selectedProduct +
+        "Notes: " + note + "\n" +
 
-        "\nAmount: ₹" +
-        selectedPrice +
+        "Amount: ₹" + price + "\n" +
 
-        "\nUTR / Transaction ID: " +
-        utr +
+        "UTR / Transaction ID: " + utr + "\n\n" +
 
-        "\n\n" +
-
-        "Please verify payment and send notes.";
+        "Please verify my payment and send the notes.";
 
 
+    const whatsappURL =
 
-    let whatsappURL =
+        "https://wa.me/" +
 
-        "https://wa.me/919098514247?text=" +
+        WHATSAPP_NUMBER +
+
+        "?text=" +
 
         encodeURIComponent(message);
 
 
-
-    window.open(
-        whatsappURL,
-        "_blank"
-    );
+    window.open(whatsappURL, "_blank");
 
 
-
-    /* SAVE UTR */
-
-    localStorage.setItem(
-        "lastUTR",
-        utr
-    );
+    document.getElementById("confirmModal").style.display = "none";
 
 }
 
 
+/* SAMPLE */
 
-/* =========================
-   SAMPLE PDF
-========================= */
+function viewSample(note){
 
-function showSample(title, price, pdfLink){
+    document.getElementById("sampleText").innerHTML =
 
-    document.getElementById("sampleTitle").innerText =
-        title + " - Sample";
+        "<strong>" + note + "</strong><br><br>" +
 
+        "यहाँ आपके Sample PDF का link लगाया जा सकता है।<br><br>" +
 
-
-    let sampleLink =
-        document.getElementById("sampleLink");
+        "आप अपने Google Drive PDF link को JavaScript में add कर सकते हैं।";
 
 
-
-    if(
-        pdfLink === "" ||
-        pdfLink.startsWith("PDF_LINK")
-    ){
-
-        sampleLink.href =
-            "#";
-
-
-        sampleLink.onclick =
-            function(){
-
-                alert(
-                    "अभी इस Class की PDF link नहीं डाली गई है।"
-                );
-
-
-                return false;
-
-            };
-
-    }
-
-    else{
-
-        sampleLink.href =
-            pdfLink;
-
-
-        sampleLink.onclick =
-            null;
-
-    }
-
-
-
-    document.getElementById("sampleModal").style.display =
-        "block";
+    document.getElementById("sampleModal").style.display = "block";
 
 }
 
 
-
-/* =========================
-   CLOSE MODAL
-========================= */
+/* CLOSE MODAL */
 
 function closeModal(id){
 
-    document.getElementById(id).style.display =
-        "none";
+    document.getElementById(id).style.display = "none";
 
 }
 
 
+/* CLOSE MODAL WHEN CLICK OUTSIDE */
 
-/* =========================
-   CLICK OUTSIDE MODAL
-========================= */
+window.onclick = function(event){
 
-window.onclick =
-    function(event){
-
-        let modals =
-            document.querySelectorAll(".modal");
+    const modals =
+        document.querySelectorAll(".modal");
 
 
-        modals.forEach(
-            function(modal){
+    modals.forEach(modal => {
 
-                if(event.target === modal){
+        if(event.target === modal){
 
-                    modal.style.display =
-                        "none";
-
-                }
-
-            }
-        );
-
-    };
-
-
-
-/* =========================
-   CLASS FILTER
-========================= */
-
-function filterClass(className, button){
-
-    let cards =
-        document.querySelectorAll(".note-card");
-
-
-
-    document.querySelectorAll(".filter-btn")
-    .forEach(
-        function(btn){
-
-            btn.classList.remove("active");
+            modal.style.display = "none";
 
         }
-    );
 
-
-
-    button.classList.add("active");
-
-
-
-    let visible =
-        0;
-
-
-
-    cards.forEach(
-        function(card){
-
-            if(
-                className === "all" ||
-                card.dataset.class === className
-            ){
-
-                card.style.display =
-                    "block";
-
-                visible++;
-
-            }
-
-            else{
-
-                card.style.display =
-                    "none";
-
-            }
-
-        }
-    );
-
-
-
-    document.getElementById("noResult").style.display =
-
-        visible === 0
-        ? "block"
-        : "none";
+    });
 
 }
-
-
-
-/* =========================
-   SEARCH
-========================= */
-
-function searchNotes(){
-
-    let search =
-        document.getElementById("searchInput")
-        .value
-        .toLowerCase();
-
-
-
-    let cards =
-        document.querySelectorAll(".note-card");
-
-
-
-    let visible =
-        0;
-
-
-
-    cards.forEach(
-        function(card){
-
-            let text =
-                card.innerText.toLowerCase();
-
-
-
-            if(text.includes(search)){
-
-                card.style.display =
-                    "block";
-
-                visible++;
-
-            }
-
-            else{
-
-                card.style.display =
-                    "none";
-
-            }
-
-        }
-    );
-
-
-
-    document.getElementById("noResult").style.display =
-
-        visible === 0
-        ? "block"
-        : "none";
-
-}
-
 
 </script>
-
 
 </body>
 </html>
