@@ -7,6 +7,7 @@
 <title>ABHINANDAN NOTES | Vocational Study Notes</title>
 
 <style>
+
 *{
     margin:0;
     padding:0;
@@ -24,6 +25,7 @@ body{
 }
 
 /* HEADER */
+
 header{
     background:#0b1f3a;
     color:white;
@@ -54,7 +56,9 @@ nav a:hover{
     color:#4fc3f7;
 }
 
+
 /* HERO */
+
 .hero{
     background:linear-gradient(135deg,#0b1f3a,#173e6d);
     color:white;
@@ -79,7 +83,9 @@ nav a:hover{
     line-height:1.7;
 }
 
+
 /* SEARCH */
+
 .search-area{
     max-width:900px;
     margin:30px auto;
@@ -99,7 +105,9 @@ nav a:hover{
     border-color:#1976d2;
 }
 
+
 /* FILTER */
+
 .filters{
     text-align:center;
     margin:25px 0 35px;
@@ -122,7 +130,9 @@ nav a:hover{
     color:white;
 }
 
+
 /* NOTES */
+
 .notes-section{
     padding:20px 6% 70px;
 }
@@ -241,7 +251,9 @@ nav a:hover{
     background:#d7deea;
 }
 
+
 /* ABOUT */
+
 .about{
     background:white;
     padding:70px 7%;
@@ -253,6 +265,21 @@ nav a:hover{
     color:#0b1f3a;
     margin-bottom:20px;
 }
+
+
+/* PROFILE PHOTO */
+
+.profile-photo{
+    width:160px;
+    height:160px;
+    object-fit:cover;
+    border-radius:50%;
+    display:block;
+    margin:0 auto 25px;
+    border:5px solid #0b1f3a;
+    box-shadow:0 5px 20px rgba(0,0,0,0.18);
+}
+
 
 .about-intro{
     max-width:850px;
@@ -288,7 +315,9 @@ nav a:hover{
     line-height:1.6;
 }
 
+
 /* CONTACT */
+
 .contact{
     padding:70px 7%;
     text-align:center;
@@ -316,7 +345,9 @@ nav a:hover{
     font-weight:bold;
 }
 
+
 /* MODAL */
+
 .modal{
     display:none;
     position:fixed;
@@ -378,7 +409,9 @@ nav a:hover{
     background:#125ca8;
 }
 
+
 /* PAYMENT */
+
 .payment-box{
     text-align:center;
 }
@@ -415,7 +448,9 @@ nav a:hover{
     margin-top:12px;
 }
 
+
 /* FOOTER */
+
 footer{
     background:#0b1f3a;
     color:white;
@@ -428,11 +463,15 @@ footer p{
     font-size:14px;
 }
 
+
 /* RESPONSIVE */
+
 @media(max-width:1000px){
+
     .notes-grid{
         grid-template-columns:repeat(2,1fr);
     }
+
 }
 
 @media(max-width:700px){
@@ -471,31 +510,51 @@ footer p{
         margin:30px auto;
         padding:22px;
     }
+
 }
+
 </style>
 </head>
 
+
 <body>
 
+
 <!-- HEADER -->
+
 <header>
-    <div class="logo">ABHINANDAN NOTES</div>
+
+    <div class="logo">
+        ABHINANDAN NOTES
+    </div>
 
     <nav>
+
         <a href="#home">Home</a>
+
         <a href="#notes">Notes</a>
+
         <a href="#about">About</a>
+
         <a href="#contact">Contact</a>
+
     </nav>
+
 </header>
 
 
+
 <!-- HERO -->
+
 <section class="hero" id="home">
 
-    <h1>ABHINANDAN NOTES</h1>
+    <h1>
+        ABHINANDAN NOTES
+    </h1>
 
-    <h2>Vocational Study Notes</h2>
+    <h2>
+        Vocational Study Notes
+    </h2>
 
     <p>
         कक्षा 9वीं से 12वीं तक के Complete Vocational Study Material,
@@ -505,7 +564,9 @@ footer p{
 </section>
 
 
+
 <!-- SEARCH -->
+
 <div class="search-area">
 
     <input
@@ -519,54 +580,77 @@ footer p{
 </div>
 
 
+
 <!-- FILTER -->
+
 <div class="filters">
 
-    <button class="filter-btn active" onclick="filterNotes('all',this)">
+    <button
+        class="filter-btn active"
+        onclick="filterNotes('all',this)">
         All
     </button>
 
-    <button class="filter-btn" onclick="filterNotes('9',this)">
+    <button
+        class="filter-btn"
+        onclick="filterNotes('9',this)">
         Class 9
     </button>
 
-    <button class="filter-btn" onclick="filterNotes('10',this)">
+    <button
+        class="filter-btn"
+        onclick="filterNotes('10',this)">
         Class 10
     </button>
 
-    <button class="filter-btn" onclick="filterNotes('11',this)">
+    <button
+        class="filter-btn"
+        onclick="filterNotes('11',this)">
         Class 11
     </button>
 
-    <button class="filter-btn" onclick="filterNotes('12',this)">
+    <button
+        class="filter-btn"
+        onclick="filterNotes('12',this)">
         Class 12
     </button>
 
 </div>
 
 
+
 <!-- NOTES -->
+
 <section class="notes-section" id="notes">
 
-    <h2>Vocational Study Material</h2>
+    <h2>
+        Vocational Study Material
+    </h2>
 
     <div class="notes-grid" id="notesGrid">
 
 
         <!-- CLASS 9 -->
+
         <div class="card note-card" data-class="9">
 
             <div class="card-header">
 
-                <div class="class-number">9th</div>
+                <div class="class-number">
+                    9th
+                </div>
 
-                <p>VOCATIONAL EDUCATION</p>
+                <p>
+                    VOCATIONAL EDUCATION
+                </p>
 
             </div>
 
             <div class="card-body">
 
-                <h3>Class 9 Vocational Notes</h3>
+                <h3>
+                    Class 9 Vocational Notes
+                </h3>
 
                 <p>
                     Complete Class 9 Vocational Theory,
@@ -575,24 +659,36 @@ footer p{
 
                 <ul class="features">
 
-                    <li>Complete Theory Notes</li>
+                    <li>
+                        Complete Theory Notes
+                    </li>
 
-                    <li>Practical Notes</li>
+                    <li>
+                        Practical Notes
+                    </li>
 
-                    <li>Important Questions</li>
+                    <li>
+                        Important Questions
+                    </li>
 
-                    <li>Exam Preparation Material</li>
+                    <li>
+                        Exam Preparation Material
+                    </li>
 
                 </ul>
 
-                <div class="price">₹49</div>
+                <div class="price">
+                    ₹49
+                </div>
 
-                <button class="btn sample-btn"
+                <button
+                    class="btn sample-btn"
                     onclick="viewSample('Class 9 Vocational Notes')">
                     View Sample
                 </button>
 
-                <button class="btn buy-btn"
+                <button
+                    class="btn buy-btn"
                     onclick="openBuy('Class 9 Vocational Notes','49')">
                     Buy Now
                 </button>
@@ -602,20 +698,28 @@ footer p{
         </div>
 
 
+
         <!-- CLASS 10 -->
+
         <div class="card note-card" data-class="10">
 
             <div class="card-header">
 
-                <div class="class-number">10th</div>
+                <div class="class-number">
+                    10th
+                </div>
 
-                <p>VOCATIONAL EDUCATION</p>
+                <p>
+                    VOCATIONAL EDUCATION
+                </p>
 
             </div>
 
             <div class="card-body">
 
-                <h3>Class 10 Vocational Notes</h3>
+                <h3>
+                    Class 10 Vocational Notes
+                </h3>
 
                 <p>
                     Complete Class 10 Vocational Theory,
@@ -624,24 +728,36 @@ footer p{
 
                 <ul class="features">
 
-                    <li>Complete Theory Notes</li>
+                    <li>
+                        Complete Theory Notes
+                    </li>
 
-                    <li>Practical Notes</li>
+                    <li>
+                        Practical Notes
+                    </li>
 
-                    <li>Important Questions</li>
+                    <li>
+                        Important Questions
+                    </li>
 
-                    <li>Exam Preparation Material</li>
+                    <li>
+                        Exam Preparation Material
+                    </li>
 
                 </ul>
 
-                <div class="price">₹59</div>
+                <div class="price">
+                    ₹59
+                </div>
 
-                <button class="btn sample-btn"
+                <button
+                    class="btn sample-btn"
                     onclick="viewSample('Class 10 Vocational Notes')">
                     View Sample
                 </button>
 
-                <button class="btn buy-btn"
+                <button
+                    class="btn buy-btn"
                     onclick="openBuy('Class 10 Vocational Notes','59')">
                     Buy Now
                 </button>
@@ -651,20 +767,28 @@ footer p{
         </div>
 
 
+
         <!-- CLASS 11 -->
+
         <div class="card note-card" data-class="11">
 
             <div class="card-header">
 
-                <div class="class-number">11th</div>
+                <div class="class-number">
+                    11th
+                </div>
 
-                <p>VOCATIONAL EDUCATION</p>
+                <p>
+                    VOCATIONAL EDUCATION
+                </p>
 
             </div>
 
             <div class="card-body">
 
-                <h3>Class 11 Vocational Notes</h3>
+                <h3>
+                    Class 11 Vocational Notes
+                </h3>
 
                 <p>
                     Complete Class 11 Vocational Theory,
@@ -673,26 +797,38 @@ footer p{
 
                 <ul class="features">
 
-                    <li>Complete Theory Notes</li>
+                    <li>
+                        Complete Theory Notes
+                    </li>
 
-                    <li>Practical Notes</li>
+                    <li>
+                        Practical Notes
+                    </li>
 
-                    <li>Important Questions</li>
+                    <li>
+                        Important Questions
+                    </li>
 
-                    <li>Exam Preparation Material</li>
+                    <li>
+                        Exam Preparation Material
+                    </li>
 
                 </ul>
 
-                <!-- PRICE ₹149 -->
-                <div class="price">₹149</div>
+                <!-- CLASS 11 PRICE -->
 
-                <button class="btn sample-btn"
+                <div class="price">
+                    ₹149
+                </div>
+
+                <button
+                    class="btn sample-btn"
                     onclick="viewSample('Class 11 Vocational Notes')">
                     View Sample
                 </button>
 
-                <!-- PRICE ₹149 -->
-                <button class="btn buy-btn"
+                <button
+                    class="btn buy-btn"
                     onclick="openBuy('Class 11 Vocational Notes','149')">
                     Buy Now
                 </button>
@@ -702,20 +838,28 @@ footer p{
         </div>
 
 
+
         <!-- CLASS 12 -->
+
         <div class="card note-card" data-class="12">
 
             <div class="card-header">
 
-                <div class="class-number">12th</div>
+                <div class="class-number">
+                    12th
+                </div>
 
-                <p>VOCATIONAL EDUCATION</p>
+                <p>
+                    VOCATIONAL EDUCATION
+                </p>
 
             </div>
 
             <div class="card-body">
 
-                <h3>Class 12 Vocational Notes</h3>
+                <h3>
+                    Class 12 Vocational Notes
+                </h3>
 
                 <p>
                     Complete Class 12 Vocational Theory,
@@ -724,26 +868,38 @@ footer p{
 
                 <ul class="features">
 
-                    <li>Complete Theory Notes</li>
+                    <li>
+                        Complete Theory Notes
+                    </li>
 
-                    <li>Practical Notes</li>
+                    <li>
+                        Practical Notes
+                    </li>
 
-                    <li>Important Questions</li>
+                    <li>
+                        Important Questions
+                    </li>
 
-                    <li>Exam Preparation Material</li>
+                    <li>
+                        Exam Preparation Material
+                    </li>
 
                 </ul>
 
-                <!-- PRICE ₹149 -->
-                <div class="price">₹149</div>
+                <!-- CLASS 12 PRICE -->
 
-                <button class="btn sample-btn"
+                <div class="price">
+                    ₹149
+                </div>
+
+                <button
+                    class="btn sample-btn"
                     onclick="viewSample('Class 12 Vocational Notes')">
                     View Sample
                 </button>
 
-                <!-- PRICE ₹149 -->
-                <button class="btn buy-btn"
+                <button
+                    class="btn buy-btn"
                     onclick="openBuy('Class 12 Vocational Notes','149')">
                     Buy Now
                 </button>
@@ -758,10 +914,25 @@ footer p{
 </section>
 
 
+
 <!-- ABOUT -->
+
 <section class="about" id="about">
 
-    <h2>About ABHINANDAN NOTES</h2>
+
+    <!-- YOUR PHOTO -->
+
+    <img
+        src="abhinandan.jpg"
+        alt="Abhinandan Dehriya"
+        class="profile-photo"
+    >
+
+
+    <h2>
+        About ABHINANDAN NOTES
+    </h2>
+
 
     <p class="about-intro">
 
@@ -778,33 +949,44 @@ footer p{
 
     <div class="about-grid">
 
+
         <div class="about-box">
 
-            <h3>Qualification</h3>
+            <h3>
+                Qualification
+            </h3>
 
             <p>
-                B.Tech & M.Tech<br>
+                B.Tech & M.Tech
+                <br>
                 Computer Science
             </p>
 
         </div>
 
 
+
         <div class="about-box">
 
-            <h3>Experience</h3>
+            <h3>
+                Experience
+            </h3>
 
             <p>
-                9+ Years<br>
+                9+ Years
+                <br>
                 Teaching Field Experience
             </p>
 
         </div>
 
 
+
         <div class="about-box">
 
-            <h3>Specialization</h3>
+            <h3>
+                Specialization
+            </h3>
 
             <p>
                 Vocational Education,
@@ -814,18 +996,24 @@ footer p{
 
         </div>
 
+
     </div>
 
 </section>
 
 
+
 <!-- CONTACT -->
+
 <section class="contact" id="contact">
 
-    <h2>Contact Us</h2>
+    <h2>
+        Contact Us
+    </h2>
 
     <p>
-        For Notes, Study Material or any Query, contact us on WhatsApp.
+        For Notes, Study Material or any Query,
+        contact us on WhatsApp.
     </p>
 
     <p>
@@ -836,13 +1024,17 @@ footer p{
         class="whatsapp"
         href="https://wa.me/919098514247"
         target="_blank">
+
         Chat on WhatsApp
+
     </a>
 
 </section>
 
 
+
 <!-- FOOTER -->
+
 <footer>
 
     <p>
@@ -850,30 +1042,39 @@ footer p{
     </p>
 
     <p>
-        B.Tech & M.Tech Computer Science | 9+ Years Teaching Experience
+        B.Tech & M.Tech Computer Science |
+        9+ Years Teaching Experience
     </p>
 
 </footer>
 
 
+
 <!-- BUY MODAL -->
+
 <div class="modal" id="buyModal">
 
     <div class="modal-content">
 
-        <span class="close" onclick="closeModal('buyModal')">
+        <span
+            class="close"
+            onclick="closeModal('buyModal')">
             ×
         </span>
 
-        <h2>Buy Notes</h2>
+        <h2>
+            Buy Notes
+        </h2>
 
         <p id="selectedNote"></p>
+
 
         <input
             type="text"
             id="studentName"
             placeholder="Enter Student Name"
         >
+
 
         <input
             type="tel"
@@ -882,10 +1083,13 @@ footer p{
             maxlength="10"
         >
 
+
         <button
             class="full-btn"
             onclick="continueToPayment()">
+
             Continue to Payment
+
         </button>
 
     </div>
@@ -893,24 +1097,37 @@ footer p{
 </div>
 
 
+
 <!-- PAYMENT MODAL -->
+
 <div class="modal" id="paymentModal">
 
     <div class="modal-content">
 
-        <span class="close" onclick="closeModal('paymentModal')">
+        <span
+            class="close"
+            onclick="closeModal('paymentModal')">
             ×
         </span>
 
+
         <div class="payment-box">
 
-            <h2>Payment</h2>
+
+            <h2>
+                Payment
+            </h2>
+
 
             <p id="paymentNote"></p>
 
-            <div class="amount" id="paymentAmount">
+
+            <div
+                class="amount"
+                id="paymentAmount">
                 ₹0
             </div>
+
 
             <p>
                 Scan QR Code using any UPI App
@@ -918,6 +1135,7 @@ footer p{
 
 
             <!-- QR CODE -->
+
             <img
                 id="qrCode"
                 class="qr-code"
@@ -927,41 +1145,55 @@ footer p{
 
 
             <div class="upi-id">
-                UPI ID:<br>
+
+                UPI ID:
+                <br>
+
                 <span id="upiText">
                     9098514247@YBL
                 </span>
+
             </div>
 
 
             <button
                 class="full-btn"
                 onclick="copyUPI()">
+
                 Copy UPI ID
+
             </button>
 
 
             <button
                 class="full-btn"
                 onclick="payUsingUPI()">
+
                 Pay Now using UPI
+
             </button>
 
 
             <button
                 class="full-btn"
                 onclick="paymentDone()">
+
                 Payment Done
+
             </button>
 
 
             <p class="note">
 
-                Payment करने के बाद "Payment Done" पर क्लिक करें
-                और अपना UTR / Transaction ID भेजें।
-                Payment verification के बाद Notes WhatsApp पर भेजे जाएंगे।
+                Payment करने के बाद "Payment Done"
+                पर क्लिक करें और अपना UTR /
+                Transaction ID भेजें।
+
+                Payment verification के बाद
+                Notes WhatsApp पर भेजे जाएंगे।
 
             </p>
+
 
         </div>
 
@@ -970,20 +1202,29 @@ footer p{
 </div>
 
 
+
 <!-- PAYMENT CONFIRMATION MODAL -->
+
 <div class="modal" id="confirmModal">
 
     <div class="modal-content">
 
-        <span class="close" onclick="closeModal('confirmModal')">
+        <span
+            class="close"
+            onclick="closeModal('confirmModal')">
             ×
         </span>
 
-        <h2>Payment Confirmation</h2>
+
+        <h2>
+            Payment Confirmation
+        </h2>
+
 
         <p>
             कृपया अपना UTR / Transaction ID दर्ज करें।
         </p>
+
 
         <input
             type="text"
@@ -995,47 +1236,69 @@ footer p{
         <button
             class="full-btn"
             onclick="sendOrderWhatsApp()">
+
             Send Order on WhatsApp
+
         </button>
+
 
     </div>
 
 </div>
 
 
+
 <!-- SAMPLE MODAL -->
+
 <div class="modal" id="sampleModal">
 
     <div class="modal-content">
 
-        <span class="close" onclick="closeModal('sampleModal')">
+        <span
+            class="close"
+            onclick="closeModal('sampleModal')">
             ×
         </span>
 
-        <h2>Sample Notes</h2>
+
+        <h2>
+            Sample Notes
+        </h2>
+
 
         <p id="sampleText"></p>
 
+
         <br>
 
+
         <p>
-            Sample PDF link को आप नीचे JavaScript में add कर सकते हैं।
+
+            यहाँ आपके Sample PDF का link
+            लगाया जा सकता है।
+
         </p>
+
 
     </div>
 
 </div>
 
 
+
 <script>
+
 
 /* UPI DETAILS */
 
-const UPI_ID = "9098514247@YBL";
+const UPI_ID =
+    "9098514247@YBL";
 
-const BUSINESS_NAME = "ABHINANDAN NOTES";
+const BUSINESS_NAME =
+    "ABHINANDAN NOTES";
 
-const WHATSAPP_NUMBER = "919098514247";
+const WHATSAPP_NUMBER =
+    "919098514247";
 
 
 /* VARIABLES */
@@ -1047,28 +1310,36 @@ let selectedPrice = "";
 let upiURL = "";
 
 
+
 /* SEARCH */
 
 function searchNotes(){
 
     const input =
-        document.getElementById("searchInput")
+        document
+        .getElementById("searchInput")
         .value
         .toLowerCase();
 
+
     const cards =
-        document.querySelectorAll(".note-card");
+        document
+        .querySelectorAll(".note-card");
+
 
     cards.forEach(card => {
 
         const text =
             card.innerText.toLowerCase();
 
+
         if(text.includes(input)){
 
             card.style.display = "";
 
-        }else{
+        }
+
+        else{
 
             card.style.display = "none";
 
@@ -1079,15 +1350,19 @@ function searchNotes(){
 }
 
 
+
 /* FILTER */
 
 function filterNotes(className, button){
 
     const cards =
-        document.querySelectorAll(".note-card");
+        document
+        .querySelectorAll(".note-card");
+
 
     const buttons =
-        document.querySelectorAll(".filter-btn");
+        document
+        .querySelectorAll(".filter-btn");
 
 
     buttons.forEach(btn => {
@@ -1101,6 +1376,7 @@ function filterNotes(className, button){
 
 
     cards.forEach(card => {
+
 
         if(className === "all"){
 
@@ -1125,6 +1401,7 @@ function filterNotes(className, button){
 }
 
 
+
 /* OPEN BUY */
 
 function openBuy(note, price){
@@ -1134,37 +1411,60 @@ function openBuy(note, price){
     selectedPrice = price;
 
 
-    document.getElementById("selectedNote").innerHTML =
+    document
+    .getElementById("selectedNote")
+    .innerHTML =
 
-        "<strong>" + note + "</strong><br><br>" +
+        "<strong>" +
+        note +
+        "</strong><br><br>" +
 
-        "Price: ₹" + price;
-
-
-    document.getElementById("studentName").value = "";
-
-    document.getElementById("studentMobile").value = "";
+        "Price: ₹" +
+        price;
 
 
-    document.getElementById("buyModal").style.display = "block";
+    document
+    .getElementById("studentName")
+    .value = "";
+
+
+    document
+    .getElementById("studentMobile")
+    .value = "";
+
+
+    document
+    .getElementById("buyModal")
+    .style.display = "block";
 
 }
+
 
 
 /* CONTINUE PAYMENT */
 
 function continueToPayment(){
 
+
     const name =
-        document.getElementById("studentName").value.trim();
+        document
+        .getElementById("studentName")
+        .value
+        .trim();
+
 
     const mobile =
-        document.getElementById("studentMobile").value.trim();
+        document
+        .getElementById("studentMobile")
+        .value
+        .trim();
 
 
     if(name === ""){
 
-        alert("Please enter Student Name.");
+        alert(
+            "Please enter Student Name."
+        );
 
         return;
 
@@ -1173,32 +1473,53 @@ function continueToPayment(){
 
     if(mobile.length !== 10){
 
-        alert("Please enter a valid 10 digit mobile number.");
+        alert(
+            "Please enter a valid 10 digit mobile number."
+        );
 
         return;
 
     }
 
 
-    localStorage.setItem("studentName", name);
+    localStorage.setItem(
+        "studentName",
+        name
+    );
 
-    localStorage.setItem("studentMobile", mobile);
 
-    localStorage.setItem("selectedNote", selectedNoteName);
+    localStorage.setItem(
+        "studentMobile",
+        mobile
+    );
 
-    localStorage.setItem("selectedPrice", selectedPrice);
+
+    localStorage.setItem(
+        "selectedNote",
+        selectedNoteName
+    );
+
+
+    localStorage.setItem(
+        "selectedPrice",
+        selectedPrice
+    );
 
 
     /* UPI PAYMENT LINK */
 
     upiURL =
+
         "upi://pay?pa=" +
+
         encodeURIComponent(UPI_ID) +
 
         "&pn=" +
+
         encodeURIComponent(BUSINESS_NAME) +
 
         "&am=" +
+
         encodeURIComponent(selectedPrice) +
 
         "&cu=INR";
@@ -1207,45 +1528,72 @@ function continueToPayment(){
     /* QR CODE */
 
     const qrURL =
+
         "https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=" +
+
         encodeURIComponent(upiURL);
 
 
-    document.getElementById("qrCode").src = qrURL;
+    document
+    .getElementById("qrCode")
+    .src = qrURL;
 
 
-    document.getElementById("paymentNote").innerHTML =
-        "<strong>" + selectedNoteName + "</strong>";
+    document
+    .getElementById("paymentNote")
+    .innerHTML =
+
+        "<strong>" +
+        selectedNoteName +
+        "</strong>";
 
 
-    document.getElementById("paymentAmount").innerHTML =
-        "₹" + selectedPrice;
+    document
+    .getElementById("paymentAmount")
+    .innerHTML =
+
+        "₹" +
+        selectedPrice;
 
 
-    document.getElementById("buyModal").style.display = "none";
+    document
+    .getElementById("buyModal")
+    .style.display = "none";
 
-    document.getElementById("paymentModal").style.display = "block";
+
+    document
+    .getElementById("paymentModal")
+    .style.display = "block";
 
 }
+
 
 
 /* COPY UPI */
 
 function copyUPI(){
 
+
     if(navigator.clipboard){
 
-        navigator.clipboard.writeText(UPI_ID)
+        navigator.clipboard
+        .writeText(UPI_ID)
 
         .then(() => {
 
-            alert("UPI ID copied: " + UPI_ID);
+            alert(
+                "UPI ID copied: " +
+                UPI_ID
+            );
 
         })
 
         .catch(() => {
 
-            alert("UPI ID: " + UPI_ID);
+            alert(
+                "UPI ID: " +
+                UPI_ID
+            );
 
         });
 
@@ -1253,56 +1601,81 @@ function copyUPI(){
 
     else{
 
-        alert("UPI ID: " + UPI_ID);
+        alert(
+            "UPI ID: " +
+            UPI_ID
+        );
 
     }
 
 }
+
 
 
 /* PAY USING UPI */
 
 function payUsingUPI(){
 
+
     if(upiURL){
 
-        window.location.href = upiURL;
+        window.location.href =
+            upiURL;
 
     }
 
     else{
 
-        alert("Please start the payment process again.");
+        alert(
+            "Please start the payment process again."
+        );
 
     }
 
 }
+
 
 
 /* PAYMENT DONE */
 
 function paymentDone(){
 
-    document.getElementById("paymentModal").style.display = "none";
 
-    document.getElementById("utrNumber").value = "";
+    document
+    .getElementById("paymentModal")
+    .style.display = "none";
 
-    document.getElementById("confirmModal").style.display = "block";
+
+    document
+    .getElementById("utrNumber")
+    .value = "";
+
+
+    document
+    .getElementById("confirmModal")
+    .style.display = "block";
 
 }
+
 
 
 /* SEND ORDER TO WHATSAPP */
 
 function sendOrderWhatsApp(){
 
+
     const utr =
-        document.getElementById("utrNumber").value.trim();
+        document
+        .getElementById("utrNumber")
+        .value
+        .trim();
 
 
     if(utr === ""){
 
-        alert("Please enter UTR / Transaction ID.");
+        alert(
+            "Please enter UTR / Transaction ID."
+        );
 
         return;
 
@@ -1310,31 +1683,54 @@ function sendOrderWhatsApp(){
 
 
     const name =
-        localStorage.getItem("studentName") || "";
+        localStorage.getItem(
+            "studentName"
+        ) || "";
+
 
     const mobile =
-        localStorage.getItem("studentMobile") || "";
+        localStorage.getItem(
+            "studentMobile"
+        ) || "";
+
 
     const note =
-        localStorage.getItem("selectedNote") || selectedNoteName;
+        localStorage.getItem(
+            "selectedNote"
+        ) ||
+        selectedNoteName;
+
 
     const price =
-        localStorage.getItem("selectedPrice") || selectedPrice;
+        localStorage.getItem(
+            "selectedPrice"
+        ) ||
+        selectedPrice;
 
 
     const message =
 
         "ABHINANDAN NOTES - NEW ORDER\n\n" +
 
-        "Student Name: " + name + "\n" +
+        "Student Name: " +
+        name +
+        "\n" +
 
-        "Mobile Number: " + mobile + "\n" +
+        "Mobile Number: " +
+        mobile +
+        "\n" +
 
-        "Notes: " + note + "\n" +
+        "Notes: " +
+        note +
+        "\n" +
 
-        "Amount: ₹" + price + "\n" +
+        "Amount: ₹" +
+        price +
+        "\n" +
 
-        "UTR / Transaction ID: " + utr + "\n\n" +
+        "UTR / Transaction ID: " +
+        utr +
+        "\n\n" +
 
         "Please verify my payment and send the notes.";
 
@@ -1350,47 +1746,64 @@ function sendOrderWhatsApp(){
         encodeURIComponent(message);
 
 
-    window.open(whatsappURL, "_blank");
+    window.open(
+        whatsappURL,
+        "_blank"
+    );
 
 
-    document.getElementById("confirmModal").style.display = "none";
+    document
+    .getElementById("confirmModal")
+    .style.display = "none";
 
 }
+
 
 
 /* SAMPLE */
 
 function viewSample(note){
 
-    document.getElementById("sampleText").innerHTML =
 
-        "<strong>" + note + "</strong><br><br>" +
+    document
+    .getElementById("sampleText")
+    .innerHTML =
 
-        "यहाँ आपके Sample PDF का link लगाया जा सकता है।<br><br>" +
+        "<strong>" +
+        note +
+        "</strong><br><br>" +
 
-        "आप अपने Google Drive PDF link को JavaScript में add कर सकते हैं।";
+        "यहाँ आपके Sample PDF का link लगाया जा सकता है।";
 
 
-    document.getElementById("sampleModal").style.display = "block";
+    document
+    .getElementById("sampleModal")
+    .style.display = "block";
 
 }
+
 
 
 /* CLOSE MODAL */
 
 function closeModal(id){
 
-    document.getElementById(id).style.display = "none";
+    document
+    .getElementById(id)
+    .style.display = "none";
 
 }
 
 
-/* CLOSE MODAL WHEN CLICK OUTSIDE */
 
-window.onclick = function(event){
+/* CLOSE MODAL OUTSIDE */
+
+window.onclick =
+function(event){
 
     const modals =
-        document.querySelectorAll(".modal");
+        document
+        .querySelectorAll(".modal");
 
 
     modals.forEach(modal => {
@@ -1403,7 +1816,8 @@ window.onclick = function(event){
 
     });
 
-}
+};
+
 
 </script>
 
